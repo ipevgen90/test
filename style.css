@@ -1,0 +1,586 @@
+body{
+	margin:0;
+	padding: 0;
+	
+	font-family: "PT Sans Narrow", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight:700;
+	text-transform: uppercase;
+	color:#ffffff;
+	
+	background-color: #000000;
+	background-image: url(img/bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a{
+
+	color:white;
+	text-decoration: none;
+	}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+	position: absolute;
+	
+	width: 1px;
+	height: -1px;
+	margin:-1px;
+	border: 0;
+	padding: 0;
+	
+	white-space: nowrap;
+	
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.button{
+	display: inline-block;
+	margin-right: 16px;
+	padding: 10px 30px;
+	
+
+	
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: midle;
+	text-transform: uppercase;
+	
+	background-color: #000000;
+	border: none;
+}
+
+.button:hover{
+	background-color: #363636;
+}
+.main-header{
+
+	min-height:285px;
+
+}
+
+.main-nav{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+	align-items: center;
+	
+	font-size: 16px;
+	line-height: 20px;
+	
+}
+
+.main-logo{
+	width: 364px;
+	margin-bottom: 80px;
+}
+
+.site-navigation{
+	display: flex;
+	list-style: none;
+	
+	margin:0;
+	padding:0;
+}
+
+
+
+.user-navigation{
+	position: relative;
+
+	list-style: none;
+	
+	margin:0;
+	padding:0;
+}
+
+.user-navigation .login-link{
+	position:relative;
+	padding-left: 50px;
+
+	
+}
+
+.login-link::before{
+	content: "";
+
+	position: absolute;
+	top: 27px;
+	left: 24px;
+
+
+	
+	width: 16px;
+	height: 18px;
+	opacity: 0.3;
+	
+	background-image: url("img/login-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
+.site-navigation a,
+.user-navigation a{
+	display: block;
+	padding: 25px 20px;
+}
+
+
+.site-navigation a:hover,
+.user-navigation a:hover{
+	background-color: #242424;
+}
+
+.login-link:hover::before{
+	opacity:1;
+}
+
+.wrap-nav{
+	width: 100%;
+	background-color: #000000;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+}
+
+.wrap-nav .container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+}
+
+.advantage-list{
+
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+	
+	width: 960px;
+	margin: 0 auto;
+	
+	list-style: none;
+}
+
+.advantage-item{
+	width: 300px;
+}
+
+.advantage-item h3{
+	margin-top:0;
+	margin-bottom: 75px;
+	position: relative;
+	
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.advantage-item h3::after{
+	content: "";
+	
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -10px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-color: #ffffff;
+	transform: rotate(45deg);
+	
+}
+
+
+.advantage-item p{
+	padding: 0 10px;
+	margin-bottom: 85px;
+	
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.column{
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	
+	padding: 50px 80px;
+	width: 960px;
+	margin: 0 auto;
+	margin-bottom: 35px;
+	
+	background-color: #f3f6f9;
+	background-image: url("img/line.png"),
+	url("img/light-pattern.jpg");
+	background-position: center, 0 0;
+	background-repeat: no-repeat, repeat;
+	
+	color: #000000;
+}
+
+.news{
+	width: 350px; 
+	margin:0;
+	padding: 0;
+}
+
+.column h2{
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.column p{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.date{
+	text-transform: none;
+	margin-top: -15px;
+}
+
+.gallery{
+	width: 300px;
+
+}
+
+.gallery img{
+	width: 286px;
+	height: 185px;
+	border: 10px solid #ffffff;
+	margin-top:-15px;
+}
+
+.gallery-button{
+	position: relative;
+	width: 330px;
+}
+
+button[name="back"]{
+	width: 140px;
+	position: absolute;
+	left: 0%;
+}
+
+button[name="next"]{
+	width: 140px;
+	position: absolute;
+	right: 0%;
+}
+
+.contacts{
+	width: 380px;
+}
+
+.appointment{
+	width: 300px;
+}
+
+.appointment form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.appointment input{
+	box-sizing: border-box;
+	width: 140px;
+	padding-top:8px;
+	padding-left: 15px;
+	padding-right: 15px; 
+	padding-bottom: 7px;
+	
+	height: 40px;
+	border: 2px solid #000000;
+	
+}
+
+.appointment-item {
+	width:140px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.appointment label{
+	padding-left: 17px;
+	display: block;
+}
+
+.appointment button{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.main-footer{
+	padding: 40px 0;
+	margin-top: 65px;
+	color:#ffffff;
+	
+	background-color: #212121;
+	background-image: url("img/dark-pattern.jpg");
+	
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+.main-footer .container{
+	display: flex;
+}
+
+
+.footer-contacts{
+	margin: 0;
+	width: 320px;
+	margin-right: 80px;
+}
+
+.footer-contacts a{
+	text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a: focus{
+	text-decoration: none;
+}
+
+.footer-social{
+	margin:0;
+	padding:0;
+	width: 145px;
+	text-align: center;
+}
+
+.footer-social li img{
+	height: 19px;
+}
+
+.footer-social ul{
+	
+	padding: 0;
+	width: 141px;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.footer-social li{
+	margin: 5px;
+	vertical-align: center;
+	width: 43px;
+	height: 43px;
+	}
+	
+.social-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 43px;
+	height: 43px;
+
+	background: #000000;
+}
+
+	
+.footer-developer{
+	width:150px;
+	margin: 0;
+	margin-left: auto;
+	text-align: center;
+}
+
+.modal-map{
+	display: none;
+	position: fixed;
+	top: 20%;
+	left:50%;
+	margin-left:-382px;
+
+	width: 786px;
+	height: 580px;
+
+	background-color: #ffffff;
+	background-image: url("img/light-pattern");
+	background-position: 0 0;
+	background-repeat: repeat;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+}
+.modal-map p{
+
+	padding:10px;
+	margin:0;
+}
+
+
+
+.modal-close{
+	position: absolute;
+	top: 0;
+	right: -34px;
+	
+	width: 22px;
+	height: 22px;
+	
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after{
+	content: "";
+	
+	position: absolute;
+
+	left: 10px;
+	
+	height: 22px;
+	width: 5px;
+	
+	background-color:#d0d0d0;
+}
+
+.modal-close::before{
+	transform: rotate(45deg);
+}
+
+.modal-close::after{
+	transform: rotate(-45deg);
+}
+
+
+.modal-login{
+	display:none;
+	box-sizing: border-box;
+	position: fixed;
+	top:20%;
+	left:50%;
+	
+	padding: 30px 80px;
+	padding-bottom:50px;
+	width: 460px;
+	
+	
+	margin-left: -230px;
+
+	
+	color: #000000;
+	background-color: #ffffff;
+	background-image: url("img/light-pattern");
+	background-position: 0 0;
+	background-repeat: repeat; 
+}
+
+.modal-login h2{
+	font-size: 30px;
+}
+
+.login-help{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.login-checkbox:hover,
+.login-checkbox:focus{
+	color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+	margin-right: 10px;
+	
+	width: 17px;
+	height: 17px;
+	
+	border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+	content:"";
+	
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	
+	width:15px;
+	height:2px;
+	
+	background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+	transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+	transform: rotate(-45deg);
+}
+
+
+.restore{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.checkbox-indicator{
+	position: relative;
+	padding-left: 17px;
+}
+
+.login-form input[type='text'],
+.login-form input[type='password'] {
+	box-sizing:border-box;
+	width: 100%;
+	
+	padding: 10px 20px;
+	padding-right: 45px;
+	
+	font: inherit;
+	text-transform: inherit;
+	
+	color:f9f6f3;
+	border: 2px solid #000000;
+}
+
+.form-login{
+	background-image: url("img/user.svg");
+	background-position: 270px 15px;
+	background-repeat: no-repeat;
+}
+
+.form-password{
+	background-image: url("img/lock.svg");
+	background-position: 270px 15px;
+	background-repeat: no-repeat;
+}
+
+.modal-login button[type=submit]{
+	width: 100%;
+
+}
+
+.modal-show{
+	display: block;
+}
+  
